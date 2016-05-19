@@ -1,8 +1,17 @@
 'use strict';
-var React = require('react-native');
-const styles = require('../styles.js')
-const { View, TouchableHighlight, Text } = React;
-class ListItem extends React.Component {
+// import  React { Component } from 'react-native'
+// import styles from '../styles.js'
+// import { View, TouchableHighlight, Text } from React;
+
+import React, {
+  Component,
+  View,
+  TouchableHighlight,
+  Text
+} from 'react-native';
+import styles from '../styles.js'
+
+class ListItem extends Component {
   render() {
     return (
       <TouchableHighlight onPress={this.props.onPress}>
